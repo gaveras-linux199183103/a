@@ -18,11 +18,11 @@ def run_command(command):
 
 def install_package(package):
     """Install a package."""
-    run_command(f"sudo apt-get install -y {package}")
+    run_command(f"apt install -y {package}")
 
 def remove_package(package):
     """Remove a package."""
-    run_command(f"sudo apt-get remove -y {package}")
+    run_command(f"apt remove -y {package}")
 
 def check_neofetch():
     """Check system info using neofetch."""
